@@ -1,16 +1,28 @@
 {
   "files": {
-    "main.css": "/test-typescript/static/css/main.f855e6bc.css",
-    "main.js": "/test-typescript/static/js/main.a7650591.js",
+    "main.css": "/test-typescript/static/css/main.de8d0fbb.css",
+    "main.js": "/test-typescript/static/js/main.57bfc8fb.js",
+    "static/css/959.5f0d2986.chunk.css": "/test-typescript/static/css/959.5f0d2986.chunk.css",
+    "static/js/959.6c79b5d7.chunk.js": "/test-typescript/static/js/959.6c79b5d7.chunk.js",
+    "static/js/658.8150e346.chunk.js": "/test-typescript/static/js/658.8150e346.chunk.js",
+    "static/js/498.7a12dcf3.chunk.js": "/test-typescript/static/js/498.7a12dcf3.chunk.js",
     "static/js/453.62e8a32f.chunk.js": "/test-typescript/static/js/453.62e8a32f.chunk.js",
-    "static/media/logo.svg": "/test-typescript/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "static/media/week_offer_delivery_page1.jpg": "/test-typescript/static/media/week_offer_delivery_page1.5936e0c9c20525da3e72.jpg",
+    "static/media/deliveryB.jpg": "/test-typescript/static/media/deliveryB.c648779be2ad021feb41.jpg",
+    "static/media/web_-50_na_drugu_1314_300A.jpg": "/test-typescript/static/media/web_-50_na_drugu_1314_300A.60d4c7c4295ab71fc21c.jpg",
+    "static/media/web_papa_jon_tree_pizza_49-grn_1314_300.jpg": "/test-typescript/static/media/web_papa_jon_tree_pizza_49-grn_1314_300.5183073e93baa09faca6.jpg",
+    "static/media/Buratino_Layer 2.svg": "/test-typescript/static/media/Buratino_Layer 2.8a84210a83f6200f0105482c0880b7c4.svg",
     "index.html": "/test-typescript/index.html",
-    "main.f855e6bc.css.map": "/test-typescript/static/css/main.f855e6bc.css.map",
-    "main.a7650591.js.map": "/test-typescript/static/js/main.a7650591.js.map",
+    "main.de8d0fbb.css.map": "/test-typescript/static/css/main.de8d0fbb.css.map",
+    "main.57bfc8fb.js.map": "/test-typescript/static/js/main.57bfc8fb.js.map",
+    "959.5f0d2986.chunk.css.map": "/test-typescript/static/css/959.5f0d2986.chunk.css.map",
+    "959.6c79b5d7.chunk.js.map": "/test-typescript/static/js/959.6c79b5d7.chunk.js.map",
+    "658.8150e346.chunk.js.map": "/test-typescript/static/js/658.8150e346.chunk.js.map",
+    "498.7a12dcf3.chunk.js.map": "/test-typescript/static/js/498.7a12dcf3.chunk.js.map",
     "453.62e8a32f.chunk.js.map": "/test-typescript/static/js/453.62e8a32f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f855e6bc.css",
-    "static/js/main.a7650591.js"
+    "static/css/main.de8d0fbb.css",
+    "static/js/main.57bfc8fb.js"
   ]
 }
