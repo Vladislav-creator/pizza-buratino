@@ -1,28 +1,28 @@
 {
   "files": {
     "main.css": "/test-typescript/static/css/main.e526efa5.css",
-    "main.js": "/test-typescript/static/js/main.de70c0a4.js",
-    "static/css/959.5f0d2986.chunk.css": "/test-typescript/static/css/959.5f0d2986.chunk.css",
-    "static/js/959.6c79b5d7.chunk.js": "/test-typescript/static/js/959.6c79b5d7.chunk.js",
+    "main.js": "/test-typescript/static/js/main.3569bd1e.js",
+    "static/css/482.3b83feb6.chunk.css": "/test-typescript/static/css/482.3b83feb6.chunk.css",
+    "static/js/482.b03465ac.chunk.js": "/test-typescript/static/js/482.b03465ac.chunk.js",
     "static/js/658.efe833c6.chunk.js": "/test-typescript/static/js/658.efe833c6.chunk.js",
     "static/js/498.7a12dcf3.chunk.js": "/test-typescript/static/js/498.7a12dcf3.chunk.js",
     "static/js/453.62e8a32f.chunk.js": "/test-typescript/static/js/453.62e8a32f.chunk.js",
-    "static/media/week_offer_delivery_page1.jpg": "/test-typescript/static/media/week_offer_delivery_page1.5936e0c9c20525da3e72.jpg",
-    "static/media/BuratinoPNG.png": "/test-typescript/static/media/BuratinoPNG.4725fde04676f641266d.png",
+    "static/media/web_papa_jon_tree_pizza_52-grn_1514_300.jpg": "/test-typescript/static/media/web_papa_jon_tree_pizza_52-grn_1514_300.04c893f535010378e7a1.jpg",
+    "static/media/week_offer_delivery_page_1414_300_papa-dzhon.jpg": "/test-typescript/static/media/week_offer_delivery_page_1414_300_papa-dzhon.aa7a799f23450523512d.jpg",
+    "static/media/web_-50_na_drugu_1314_300B.jpg": "/test-typescript/static/media/web_-50_na_drugu_1314_300B.d62ce78ee72dcdb6ae86.jpg",
+    "static/media/Buratino_Layer 2.png": "/test-typescript/static/media/Buratino_Layer 2.9acba26eda48af52b075.png",
     "static/media/deliveryB.jpg": "/test-typescript/static/media/deliveryB.c648779be2ad021feb41.jpg",
-    "static/media/web_-50_na_drugu_1314_300A.jpg": "/test-typescript/static/media/web_-50_na_drugu_1314_300A.60d4c7c4295ab71fc21c.jpg",
-    "static/media/web_papa_jon_tree_pizza_49-grn_1314_300.jpg": "/test-typescript/static/media/web_papa_jon_tree_pizza_49-grn_1314_300.5183073e93baa09faca6.jpg",
     "index.html": "/test-typescript/index.html",
     "main.e526efa5.css.map": "/test-typescript/static/css/main.e526efa5.css.map",
-    "main.de70c0a4.js.map": "/test-typescript/static/js/main.de70c0a4.js.map",
-    "959.5f0d2986.chunk.css.map": "/test-typescript/static/css/959.5f0d2986.chunk.css.map",
-    "959.6c79b5d7.chunk.js.map": "/test-typescript/static/js/959.6c79b5d7.chunk.js.map",
+    "main.3569bd1e.js.map": "/test-typescript/static/js/main.3569bd1e.js.map",
+    "482.3b83feb6.chunk.css.map": "/test-typescript/static/css/482.3b83feb6.chunk.css.map",
+    "482.b03465ac.chunk.js.map": "/test-typescript/static/js/482.b03465ac.chunk.js.map",
     "658.efe833c6.chunk.js.map": "/test-typescript/static/js/658.efe833c6.chunk.js.map",
     "498.7a12dcf3.chunk.js.map": "/test-typescript/static/js/498.7a12dcf3.chunk.js.map",
     "453.62e8a32f.chunk.js.map": "/test-typescript/static/js/453.62e8a32f.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e526efa5.css",
-    "static/js/main.de70c0a4.js"
+    "static/js/main.3569bd1e.js"
   ]
 }
