@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
  import NotFound from './Pages/NotFound/NotFound';
 import Navigation from './Components/Navigation/Navigation';
 import { Loader } from './Components/Loader';
@@ -12,7 +12,7 @@ const Contacts = lazy(() => import('./Pages/Contacts/Contacts'));
 const App: React.FC = () => {
     return (
         
-         <Router basename="/test-typescript">
+         <HashRouter>
          <Navigation />
          <Suspense fallback={<Loader />}>
          <Routes>
@@ -22,7 +22,7 @@ const App: React.FC = () => {
              <Route path="*" element={<NotFound />} />
          </Routes>
          </Suspense>
-     </Router>
+     </HashRouter>
     );
 };
 
