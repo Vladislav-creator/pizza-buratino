@@ -1,11 +1,11 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import css from './Navigation.module.css';
-import mySVG from '../../Components/Images/Buratino_Layer 2.svg';
+import mySVG from '../../Components/Images/BuratinoPNG.png';
 const Navigation: React.FC = () => {
     return (
         <nav className={css.headerNav}>
-            <img className={css.logo} width="160px"
+            <img className={css.logo} width="97px"
    height="auto" src={mySVG} alt="Description" />
             <ul className={css.header}>
                 <li><NavLink className="header-link" to="/">Home</NavLink></li>
