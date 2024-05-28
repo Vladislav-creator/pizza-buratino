@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import css from './Navigation.module.css';
-import mySVG from '../../Components/Images/BuratinoPNG.png';
+import mySVG from '../../Components/Images/Buratino_Layer 2.png';
 const Navigation: React.FC = () => {
     return (
         <nav className={css.headerNav}>
