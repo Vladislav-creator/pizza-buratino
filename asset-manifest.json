@@ -1,10 +1,10 @@
 {
   "files": {
     "main.css": "/test-typescript/static/css/main.de8d0fbb.css",
-    "main.js": "/test-typescript/static/js/main.57bfc8fb.js",
+    "main.js": "/test-typescript/static/js/main.7c412f1d.js",
     "static/css/959.5f0d2986.chunk.css": "/test-typescript/static/css/959.5f0d2986.chunk.css",
     "static/js/959.6c79b5d7.chunk.js": "/test-typescript/static/js/959.6c79b5d7.chunk.js",
-    "static/js/658.8150e346.chunk.js": "/test-typescript/static/js/658.8150e346.chunk.js",
+    "static/js/658.efe833c6.chunk.js": "/test-typescript/static/js/658.efe833c6.chunk.js",
     "static/js/498.7a12dcf3.chunk.js": "/test-typescript/static/js/498.7a12dcf3.chunk.js",
     "static/js/453.62e8a32f.chunk.js": "/test-typescript/static/js/453.62e8a32f.chunk.js",
     "static/media/week_offer_delivery_page1.jpg": "/test-typescript/static/media/week_offer_delivery_page1.5936e0c9c20525da3e72.jpg",
@@ -14,15 +14,15 @@
     "static/media/Buratino_Layer 2.svg": "/test-typescript/static/media/Buratino_Layer 2.8a84210a83f6200f0105482c0880b7c4.svg",
     "index.html": "/test-typescript/index.html",
     "main.de8d0fbb.css.map": "/test-typescript/static/css/main.de8d0fbb.css.map",
-    "main.57bfc8fb.js.map": "/test-typescript/static/js/main.57bfc8fb.js.map",
+    "main.7c412f1d.js.map": "/test-typescript/static/js/main.7c412f1d.js.map",
     "959.5f0d2986.chunk.css.map": "/test-typescript/static/css/959.5f0d2986.chunk.css.map",
     "959.6c79b5d7.chunk.js.map": "/test-typescript/static/js/959.6c79b5d7.chunk.js.map",
-    "658.8150e346.chunk.js.map": "/test-typescript/static/js/658.8150e346.chunk.js.map",
+    "658.efe833c6.chunk.js.map": "/test-typescript/static/js/658.efe833c6.chunk.js.map",
     "498.7a12dcf3.chunk.js.map": "/test-typescript/static/js/498.7a12dcf3.chunk.js.map",
     "453.62e8a32f.chunk.js.map": "/test-typescript/static/js/453.62e8a32f.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.de8d0fbb.css",
-    "static/js/main.57bfc8fb.js"
+    "static/js/main.7c412f1d.js"
   ]
 }
