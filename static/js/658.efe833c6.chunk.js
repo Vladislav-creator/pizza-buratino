@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunktest_typescript=self.webpackChunktest_typescript||[]).push([[658],{658:(e,s,t)=>{t.r(s),t.d(s,{default:()=>c});t(43);var r=t(579);const c=()=>(0,r.jsxs)("div",{children:[(0,r.jsx)("h1",{children:"About Page"}),(0,r.jsx)("p",{children:"Learn more about us from Vlad! "})]})}}]);
-//# sourceMappingURL=658.efe833c6.chunk.js.map
