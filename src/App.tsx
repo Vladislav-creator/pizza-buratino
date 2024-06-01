@@ -4,7 +4,8 @@ import { HashRouter, Routes, Route } from 'react-router-dom';
 import Navigation from './Components/Navigation/Navigation';
 import { Loader } from './Components/Loader';
 import { Suspense, lazy } from 'react';
-
+import mySVG from './Components/Images/Buratino_Layer 2.png';
+import css from './App.module.css';
 const Home = lazy(() => import('./Pages/Home/Home'));
 const About = lazy(() => import('./Pages/About/About'));
 const Contacts = lazy(() => import('./Pages/Contacts/Contacts'));
@@ -13,7 +14,12 @@ const App: React.FC = () => {
     return (
         
          <HashRouter>
-         <Navigation />
+            <div className='backgraund-pizza'>
+            <Navigation />
+            <img className={css.logo}  src={mySVG} alt="Description" />
+           
+            </div>
+            
          <Suspense fallback={<Loader />}>
          <Routes>
              <Route path="/" element={<Home />} />

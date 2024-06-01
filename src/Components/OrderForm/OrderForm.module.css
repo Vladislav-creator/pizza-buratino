@@ -1,0 +1,27 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    padding: 10px;
+    border: 1px solid green
+  }
+  
+  .formInput {
+    margin-bottom: 10px;
+    padding: 8px;
+    font-size: 16px;
+    text-decoration: none;
+  }
+  
+  .formButton {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .formButton:hover {
+    background-color: #45a049;
+  }
