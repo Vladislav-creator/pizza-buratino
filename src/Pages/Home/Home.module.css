@@ -1,0 +1,9 @@
+.iconsAndSlider {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+.icons{
+    display: flex;
+    gap: 10px;
+}
