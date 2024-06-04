@@ -361,7 +361,7 @@
         "popular": false,
         "categories": "Американська піца",
         "composition": "Соус Буратіно, соус Шрирача, сир Моцарела, ковбаска Пепероні, помідори, перець Чилі, цибуля червона, соус Барбекю",
-        "img": "https://buratino-images.s3.eu-north-1.amazonaws.com/Pizza-Buratino/american_pizza_pizza/devil's_pizza.png",
+        "img": "https://buratino-images.s3.eu-north-1.amazonaws.com/Pizza-Buratino/american_pizza_pizza/pizza-demon.png",
         "weight-small": "290 г",
         "price-small": 169,
         "weight-average": "510 г",
