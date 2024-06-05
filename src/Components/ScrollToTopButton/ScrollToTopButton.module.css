@@ -1,0 +1,36 @@
+
+.scrollToTopButton {
+    background-color: violet;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    margin-left: auto;
+    opacity: 1; /* По умолчанию кнопка видима */
+    transition: background-color 0.3s ease; /* Плавное изменение цвета фона */
+}
+
+.scrollToTopButton:hover,
+.scrollToTopButton:focus,
+.scrollToTopButton:active {
+    background-color: purple;
+}
+
+.scrollToTopButton::after {
+    content: "\25B2";
+    font-size: 20px;
+    margin-right: 5px;
+}
+
+/* Стиль для кнопки в состоянии скрытия */
+.scrollToTopButton.hidden {
+    visibility: hidden; /* Скрываем кнопку */
+    opacity: 0; /* Делаем ее прозрачной */
+    pointer-events: none; /* Отключаем реакцию на события мыши */
+    transition: visibility 0.3s ease, opacity 0.3s ease; /* Плавное изменение видимости и прозрачности */
+}

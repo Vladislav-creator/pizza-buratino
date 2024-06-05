@@ -7,4 +7,51 @@
 .icons{
     display: flex;
     gap: 10px;
+    margin-bottom: 15px;
 }
+
+ 
+  
+  select {
+    cursor: pointer;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    padding-right: 1rem;
+  }
+  .buttonIcons{
+    position: relative;
+    cursor: pointer;
+  }
+  .buttonIcons:hover::before {
+    content: attr(data-description); 
+    position: absolute;
+    top: -50px; 
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #d3a27f;
+    color: white; 
+    padding: 5px 10px;
+    border-radius: 5px;
+    z-index: 1; 
+    display: flex;
+    align-items: center;
+  }
+  .buttonIcons:hover::after {
+    content: "";
+  position: absolute;
+  top: 100%; /* Position it just below the button */
+  left: 50%;
+  transform: translateX(-50%) translateY(-75px); /* Center it horizontally and add some vertical spacing */
+  width: 0;
+  height: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 8px solid #d3a27f; 
+  }
+  .mainTitleFromFilter{
+    text-align: center;
+    margin-bottom: 10px;
+    color: brown;
+    font-size: 30px;
+  }

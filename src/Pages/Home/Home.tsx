@@ -13,23 +13,36 @@ import NewIcon from '../../Components/Images/new';
 import FireIcon from '../../Components/Images/fire';
 import HeardIcon from '../../Components/Images/heard';
 import css from './Home.module.css';
+import ScrollToTopButton from '../../Components/ScrollToTopButton/ScrollToTopButton';
+
+import CustomSelect from '../../Components/CustomSelect/CustomSelect';
+import { SingleValue, MultiValue } from 'react-select';
 
 const Home: React.FC = () => {
+  interface OptionType {
+    value: string;
+    label: string;
+  }
+
   const images = [image1, image2, image3, image4];
   const [allPizzas, setAllPizzas] = useState<Pizza[]>([]);
   const [displayedPizzas, setDisplayedPizzas] = useState<Pizza[]>([]);
   const [loading, setLoading] = useState(false);
   const [hasMore, setHasMore] = useState(true);
   const [selectedFilters, setSelectedFilters] = useState<string[]>([]);
+  const [currentDescription, setCurrentDescription] = useState<string | null>(null);
 
-  const toggleFilter = (filter: string) => {
-    setSelectedFilters(prevFilters => {
-      if (prevFilters.includes(filter)) {
-        return prevFilters.filter(f => f !== filter);
-      } else {
-        return [...prevFilters, filter];
-      }
-    });
+  const options: OptionType[] = [
+    { value: '', label: 'All' },
+    ...Array.from(new Set(displayedPizzas.map(pizza => pizza.categories))).map((category, index) => ({
+      value: `category-${index}`,
+      label: category,
+    })),
+  ];
+
+  const toggleFilter = (filter: string, description: string) => {
+    setCurrentDescription(description); // Set current description
+    setSelectedFilters([filter]);
   };
 
   const fetchPizzas = useCallback(async () => {
@@ -70,8 +83,10 @@ const Home: React.FC = () => {
     return () => observer.disconnect();
   }, [loading, hasMore, fetchPizzas]);
 
-  const handleCategoryChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
-    const selectedCategory = e.target.value;
+  const handleCategoryChange = (
+    selectedOption: SingleValue<OptionType> | MultiValue<OptionType>
+  ) => {
+    const selectedCategory = (selectedOption as SingleValue<OptionType>)?.value;
     if (selectedCategory) {
       const element = document.getElementById(selectedCategory);
       if (element) {
@@ -109,52 +124,42 @@ const Home: React.FC = () => {
     applyFilters();
   }, [applyFilters, selectedFilters]);
 
+  const handleScrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
   return (
     <div className="container">
       <h1>PIZZA BURATINO</h1>
       <div className={css.iconsAndSlider}>
         <div>
           <div className={css.icons}>
-            <div onClick={() => {
-              setSelectedFilters([]);
-              toggleFilter('vegetarian');
-            }}>
+            <div className={css.buttonIcons} data-description="Вегетаріанське" onClick={() => toggleFilter('vegetarian', 'Вегетаріанське')}>
               <LeafIcon width='50px' />
             </div>
-            <div onClick={() => {
-              setSelectedFilters([]);
-              toggleFilter('new');
-            }}>
+            <div className={css.buttonIcons} data-description="Новинка" onClick={() => toggleFilter('new', 'Новинка')}>
               <NewIcon width='50px' />
             </div>
-            <div onClick={() => {
-              setSelectedFilters([]);
-              toggleFilter('spicy');
-            }}>
+            <div className={css.buttonIcons} data-description="Гостре" onClick={() => toggleFilter('spicy', 'Гостре')}>
               <FireIcon width='50px' />
             </div>
-            <div onClick={() => {
-              setSelectedFilters([]);
-              toggleFilter('popular');
-            }}>
+            <div className={css.buttonIcons} data-description="Популярне" onClick={() => toggleFilter('popular', 'Популярне')}>
               <HeardIcon width='50px' />
             </div>
-            <div onClick={() => setSelectedFilters([])}>
+            <div className={css.buttonIcons} data-description="Уcе" onClick={() => toggleFilter('', 'Всі наші смаколики для Вас шановні)')}>
               <AllIcon width='50px' />
             </div>
           </div>
-          <select onChange={handleCategoryChange}>
-            <option value="">All</option>
-            {Array.from(new Set(displayedPizzas.map(pizza => pizza.categories)))
-              .map((category, index) => (
-                <option key={index} value={`category-${index}`}>
-                  {category}
-                </option>
-              ))}
-          </select>
+          <CustomSelect
+            className="selectCategories"
+            options={options}
+            onChange={handleCategoryChange}
+          />
         </div>
         <ImagesSlider images={images} interval={3000} />
       </div>
+
+      {currentDescription && <h2 className={css.mainTitleFromFilter}>{currentDescription}</h2>}
 
       <div>
         {Array.from(new Set(displayedPizzas.map(pizza => pizza.level)))
@@ -171,6 +176,9 @@ const Home: React.FC = () => {
         {loading && <p>Loading more pizzas...</p>}
         {!hasMore && <p>No more pizzas to load.</p>}
       </div>
+      {!loading && (
+        <ScrollToTopButton onClick={handleScrollToTop} />
+      )}
     </div>
   );
 };
