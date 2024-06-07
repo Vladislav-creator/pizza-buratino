@@ -1,22 +1,49 @@
-.header {
-  background: white;
-    height: 5rem;
-    display: flex;
-  align-items: center;
-  gap: 20px;
-  padding: 0 15px;
-  margin: 0 auto;
-  
- width: 70%; 
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
+
 .headerNav{
   /* position: fixed; */
-    top: 0; 
- 
+    /* top: 0;  */
+    justify-content: center;
     width: 100%; 
-    z-index: 1000; 
-    display: flex;
-    
+    /* z-index: 1000;  */
+    display: flex;   
+}
+.headerAll {
+  display: flex;
+  justify-content: space-between;
+  background: white;
+  align-items: center;
+  width: 70%;
+  margin: 0 auto;
+  padding: 15px 0;
 }
 
+.header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-left: 0;
+  padding: 0 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.money {
+ font-size: 25px;
+ color: gray;
+ 
+}
+.basketIconDiv {
+  margin-left: auto;
+  margin-right: 15px; 
+  border: 1px solid gray;
+  padding: 5px;
+  border-radius: 10px;
+  display: flex;
+  align-items: end;
+  gap: 5px;
+  cursor: pointer;
+}
+.moneyDiv{
+  flex-grow: 1; /* Разрешить контейнеру растягиваться */
+  display: flex; 
+ 
+}
