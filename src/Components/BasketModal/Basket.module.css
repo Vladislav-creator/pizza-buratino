@@ -1,0 +1,72 @@
+.money {
+    font-size: 20px;
+    color: gray;
+    
+   }
+   .basketIconDiv {
+     margin-left: auto;
+     margin-right: 15px; 
+     border: 1px solid gray;
+     padding: 5px;
+     border-radius: 10px;
+     display: flex;
+     align-items: end;
+     gap: 5px;
+     cursor: pointer;
+   }
+   .moneyDiv{
+     flex-grow: 1; /* Разрешить контейнеру растягиваться */
+     display: flex; 
+    
+   }
+  
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+    z-index: 1000;
+    overflow-y: auto;
+  }
+  
+  .modalContent {
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 1200px;
+  }
+  
+  .closeButton {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    margin-bottom: 20px;
+  }
+  .cartItem {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .quantityControl {
+    display: flex;
+    align-items: center;
+  }
+  
+  .quantityButton {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    margin: 0 10px;
+  }
+  
+  .totalAmount {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+  }

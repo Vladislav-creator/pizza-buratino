@@ -116,7 +116,7 @@ const Home: React.FC = () => {
       });
     });
 
-    console.log('Filtered Pizzas:', filteredPizzas);
+   
     setDisplayedPizzas(filteredPizzas);
   }, [allPizzas, selectedFilters]);
 
