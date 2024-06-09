@@ -70,3 +70,30 @@
     font-size: 18px;
     font-weight: bold;
   }
+
+  .closeButtonItem {
+    background-color: transparent; /* Прозрачный фон */
+    border: 2px solid #ccc; /* Серый цвет ободка */
+    border-radius: 50%; /* Сделать кнопку круглой */
+    color: #ccc; /* Серый цвет текста и символа крестика */
+    cursor: pointer;
+    font-size: 20px; /* Размер символа крестика */
+    padding: 0; /* Убрать отступы вокруг текста */
+    width: 30px; /* Ширина кнопки */
+    height: 30px; /* Высота кнопки */
+    display: flex; /* Сделать содержимое центрированным */
+    justify-content: center; /* Горизонтальное центрирование содержимого */
+    align-items: center; /* Вертикальное центрирование содержимого */
+    transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease; /* Плавное изменение цвета при наведении */
+  }
+  
+  .closeButtonItem::after {
+    content: '✖'; 
+  }
+  
+  .closeButtonItem:hover,
+  .closeButtonItem:focus {
+    background-color: #f0f0f0; /* Изменение цвета фона при наведении */
+    border-color: #999; /* Изменение цвета ободка при наведении */
+    color: #999; /* Изменение цвета текста и символа крестика при наведении */
+  }

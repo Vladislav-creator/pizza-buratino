@@ -7,6 +7,7 @@ import css from './PizzaItem.module.css';
 import GrnIcon from '../../Components/Images/grn';
 import { RootState } from '../Redux/store';
 
+
 interface PizzaItemProps {
   pizza: Pizza;
 }
@@ -14,15 +15,19 @@ interface PizzaItemProps {
 const PizzaItem: React.FC<PizzaItemProps> = ({ pizza }) => {
   const dispatch = useDispatch();
   const cartItems = useSelector((state: RootState) => state.cart.items);
-  const filteredItems = cartItems.filter(item => item.id === pizza.id);
-
-  const totalQuantity = filteredItems.reduce((total, item) => total + item.quantity, 0);
-
+  
   const initialSelectedWeight = pizza["weight-small"] !== '' ? 'weight-small' : 'weight';
   const [selectedWeight, setSelectedWeight] = useState(initialSelectedWeight);
+  const filteredItems = cartItems.filter(item => item.name === pizza.name);
+  
+  
+  const totalQuantity = filteredItems.reduce((total, item) => total + item.quantity, 0);
+
   const [showMessage, setShowMessage] = useState(false);
   const [itemMessage, setItemMessage] = useState<JSX.Element | null>(null);
   const [showOrderDetails, setShowOrderDetails] = useState(false);
+  
+  
   const totalAmount = useSelector((state: RootState) => selectCartTotal(state));
 
   const hasWeightAndPrice = (weight: string, price: number) => weight !== '' && price !== 0;
@@ -31,7 +36,7 @@ const PizzaItem: React.FC<PizzaItemProps> = ({ pizza }) => {
     const itemPrice = pizza[selectedWeight.replace('weight', 'price') as keyof Pizza] as number;
 
     dispatch(addItemToCart({
-      id: pizza.id,
+      id: pizza.id + selectedWeight,
       name: pizza.name,
       weight: selectedWeight,
       price: itemPrice,
@@ -53,9 +58,9 @@ const PizzaItem: React.FC<PizzaItemProps> = ({ pizza }) => {
 
   const getWeightText = (weight: string) => {
     switch(weight) {
-      case 'weight-small': return 'маленькую';
-      case 'weight-average': return 'среднюю';
-      case 'weight-big': return 'большую';
+      case 'weight-small': return 'маленьку';
+      case 'weight-average': return 'середню';
+      case 'weight-big': return 'велику';
       case 'weight-mega': return 'мега';
       case 'weight': return '';
       default: return '';
@@ -79,7 +84,7 @@ const PizzaItem: React.FC<PizzaItemProps> = ({ pizza }) => {
         {hasWeightAndPrice(pizza["weight-small"], pizza["price-small"]) && (
           <div className={css.weightAndPriceButton}>
             <button className={selectedWeight === 'weight-small' ? css.active : ''} onClick={() => setSelectedWeight('weight-small')}>
-              <p>маленькая:</p> <p>{pizza["weight-small"]}</p>
+              <p>маленька:</p> <p>{pizza["weight-small"]}</p>
             </button>
             <p className={css.priceFromWeight}>{pizza["price-small"]} <GrnIcon width={11} height={11} /></p>
           </div>
@@ -135,7 +140,7 @@ const PizzaItem: React.FC<PizzaItemProps> = ({ pizza }) => {
           <div className={css.imageGrid}>
             {filteredItems.map((item) => (
               <div key={item.id} className={css.cartItem}>
-                <p>{item.name} - {item.weight}</p>
+                <p>{item.name} - {getWeightText(item.weight)}</p>
                 <div className={css.quantityControl}>
                   <button className={css.quantityButton} onClick={() => dispatch(decrementQuantity(item))}>-</button>
                   <p>{item.quantity}</p>

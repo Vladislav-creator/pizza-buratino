@@ -4,7 +4,7 @@ import { RootState } from '../Redux/store';
 import BasketIcon from '../Images/basket';
 import GrnIcon from '../Images/grn';
 import css from './Basket.module.css';
-import { incrementQuantity, decrementQuantity } from '../Redux/cartSlice';
+import { incrementQuantity, decrementQuantity, delItemToCart } from '../Redux/cartSlice';
 
 const BasketModal: React.FC = () => {
     const dispatch = useDispatch();
@@ -15,7 +15,16 @@ const BasketModal: React.FC = () => {
     const toggleModal = () => {
       setShowModal(!showModal);
     };
-  
+    const getWeightText = (weight: string) => {
+      switch(weight) {
+        case 'weight-small': return 'маленька';
+        case 'weight-average': return 'середня';
+        case 'weight-big': return 'велика';
+        case 'weight-mega': return 'мега';
+        case 'weight': return '';
+        default: return '';
+      }
+    };
     return (
       <div>
         <div className={css.basketIconDiv} onClick={toggleModal}>
@@ -35,7 +44,7 @@ const BasketModal: React.FC = () => {
   .filter(item => item.quantity > 0) // Фильтруем только элементы с количеством больше 0
   .map((item) => (
     <div key={item.id} className={css.cartItem}>
-      <p>{item.name} - {item.weight}</p>
+      <p>{item.name} - {getWeightText(item.weight)}</p>
       <div className={css.quantityControl}>
         <button className={css.quantityButton} onClick={() => dispatch(decrementQuantity(item))}>-</button>
         <p>{item.quantity}</p>
@@ -43,6 +52,7 @@ const BasketModal: React.FC = () => {
       </div>
       <p>{item.price} грн</p>
       <p>Всього: {item.totalPrice} грн</p>
+      <button className={css.closeButtonItem} onClick={() => dispatch(delItemToCart({ id: item.id, weight: item.weight}))}></button>
     </div>
   ))
               )}
