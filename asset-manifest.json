@@ -1,9 +1,9 @@
 {
   "files": {
-    "main.css": "/test-typescript/static/css/main.d1cd1413.css",
-    "main.js": "/test-typescript/static/js/main.a307a009.js",
-    "static/css/601.ffe38c02.chunk.css": "/test-typescript/static/css/601.ffe38c02.chunk.css",
-    "static/js/601.d4af8d3d.chunk.js": "/test-typescript/static/js/601.d4af8d3d.chunk.js",
+    "main.css": "/test-typescript/static/css/main.02d291c0.css",
+    "main.js": "/test-typescript/static/js/main.e66821d9.js",
+    "static/css/601.aefb73d6.chunk.css": "/test-typescript/static/css/601.aefb73d6.chunk.css",
+    "static/js/601.c4e5268d.chunk.js": "/test-typescript/static/js/601.c4e5268d.chunk.js",
     "static/css/415.3a721fda.chunk.css": "/test-typescript/static/css/415.3a721fda.chunk.css",
     "static/js/415.432ac0ee.chunk.js": "/test-typescript/static/js/415.432ac0ee.chunk.js",
     "static/js/498.7a12dcf3.chunk.js": "/test-typescript/static/js/498.7a12dcf3.chunk.js",
@@ -15,17 +15,17 @@
     "static/media/Buratino_Layer 2.png": "/test-typescript/static/media/Buratino_Layer 2.9acba26eda48af52b075.png",
     "static/media/deliveryC.jpg": "/test-typescript/static/media/deliveryC.ae4097aabbdbf9873c81.jpg",
     "index.html": "/test-typescript/index.html",
-    "main.d1cd1413.css.map": "/test-typescript/static/css/main.d1cd1413.css.map",
-    "main.a307a009.js.map": "/test-typescript/static/js/main.a307a009.js.map",
-    "601.ffe38c02.chunk.css.map": "/test-typescript/static/css/601.ffe38c02.chunk.css.map",
-    "601.d4af8d3d.chunk.js.map": "/test-typescript/static/js/601.d4af8d3d.chunk.js.map",
+    "main.02d291c0.css.map": "/test-typescript/static/css/main.02d291c0.css.map",
+    "main.e66821d9.js.map": "/test-typescript/static/js/main.e66821d9.js.map",
+    "601.aefb73d6.chunk.css.map": "/test-typescript/static/css/601.aefb73d6.chunk.css.map",
+    "601.c4e5268d.chunk.js.map": "/test-typescript/static/js/601.c4e5268d.chunk.js.map",
     "415.3a721fda.chunk.css.map": "/test-typescript/static/css/415.3a721fda.chunk.css.map",
     "415.432ac0ee.chunk.js.map": "/test-typescript/static/js/415.432ac0ee.chunk.js.map",
     "498.7a12dcf3.chunk.js.map": "/test-typescript/static/js/498.7a12dcf3.chunk.js.map",
     "369.3ffcaaec.chunk.js.map": "/test-typescript/static/js/369.3ffcaaec.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d1cd1413.css",
-    "static/js/main.a307a009.js"
+    "static/css/main.02d291c0.css",
+    "static/js/main.e66821d9.js"
   ]
 }
