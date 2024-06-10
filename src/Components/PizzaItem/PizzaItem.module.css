@@ -124,7 +124,7 @@
   border-radius: 5px;
   margin-top: 10px;
   text-align: center;
-  animation: fadeInOut 10s ease-in-out;
+  animation: fadeInOut 8s ease-in-out;
   position: absolute;
   z-index: 1;
   top: 300px;

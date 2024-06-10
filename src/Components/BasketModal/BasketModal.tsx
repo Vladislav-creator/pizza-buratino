@@ -41,24 +41,24 @@ const BasketModal: React.FC = () => {
                 <p>Ваша корзина пуста</p>
               ) : (
                 cartItems
-  .filter(item => item.quantity > 0) // Фильтруем только элементы с количеством больше 0
-  .map((item) => (
+  .filter(item => item.quantity > 0) 
+  .map((item, index) => (
     <div key={item.id} className={css.cartItem}>
-      <p>{item.name} - {getWeightText(item.weight)}</p>
+      <p className={css.nameDish}>{index + 1}.  {item.name}</p> <div className={css.weightDish}><p> {getWeightText(item.weight)}({item.weightNumber})</p></div>
       <div className={css.quantityControl}>
         <button className={css.quantityButton} onClick={() => dispatch(decrementQuantity(item))}>-</button>
         <p>{item.quantity}</p>
         <button className={css.quantityButton} onClick={() => dispatch(incrementQuantity(item))}>+</button>
       </div>
-      <p>{item.price} грн</p>
-      <p>Всього: {item.totalPrice} грн</p>
+      <p>{item.price} <GrnIcon width={12} height={12} /></p>
+      <p className={css.totalPrice} >Всього: {item.totalPrice} <GrnIcon width={12} height={12} /></p>
       <button className={css.closeButtonItem} onClick={() => dispatch(delItemToCart({ id: item.id, weight: item.weight}))}></button>
     </div>
   ))
               )}
               <hr />
               <div className={css.totalAmount}>
-                <p>Сума до оплати: {totalAmount} грн</p>
+                <p>Сума до оплати: {totalAmount} <GrnIcon width={12} height={12} /></p>
               </div>
             </div>
           </div>

@@ -97,3 +97,14 @@
     border-color: #999; /* Изменение цвета ободка при наведении */
     color: #999; /* Изменение цвета текста и символа крестика при наведении */
   }
+  .nameDish{
+    width: 28%;
+  }
+  .weightDish{
+    width: 16%;
+    display: flex;
+    justify-content: center;
+  }
+  .totalPrice{
+    width: 14%;
+  }
