@@ -27,7 +27,7 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose }) => {
     <div className={css.modalBackdrop} onClick={onClose}>
       <div className={css.modalContent} onClick={(e) => e.stopPropagation()}>
         <button className={css.closeButton} onClick={onClose}></button>
-        <div className={css.titleModalContent}><h2>Умови доставки Піца Буратіно</h2></div>
+        <div className={css.titleModalContent}><h2>Умови доставки <span className={css.spanPizzaBuratino}>Піца Буратіно</span></h2></div>
         <div className={css.textModalContent}>
         <p>Область доставки – Весь Київ</p>
         <p>Вартість доставки – безкоштовно від 600 грн, від 200 до 599 грн доставка 40 грн.</p>

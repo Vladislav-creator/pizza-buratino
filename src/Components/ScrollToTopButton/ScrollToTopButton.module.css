@@ -13,6 +13,10 @@
     margin-left: auto;
     opacity: 1; /* По умолчанию кнопка видима */
     transition: background-color 0.3s ease; /* Плавное изменение цвета фона */
+    z-index: 100;
+    position: fixed;
+     bottom: 30px;
+     right: 6px;
 }
 
 .scrollToTopButton:hover,

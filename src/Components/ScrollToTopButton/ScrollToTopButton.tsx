@@ -10,7 +10,7 @@ const ScrollToTopButton: React.FC<ScrollToTopButtonProps> = ({ onClick }) => {
 
   useEffect(() => {
     const handleScroll = () => {
-      setScrolledUp(window.scrollY > 0);
+      setScrolledUp(window.scrollY > 100);
     };
 
     window.addEventListener('scroll', handleScroll);

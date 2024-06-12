@@ -5,7 +5,7 @@ import { HashRouter, Routes, Route } from 'react-router-dom';
 import Navigation from './Components/Navigation/Navigation';
 import { Loader } from './Components/Loader';
 import { Suspense, lazy } from 'react';
-import mySVG from './Components/Images/Buratino_Layer 2.png';
+import mySVG from './Components/Images/pizza-buratino.png';
 import ClockIcon from './Components/Images/clock';
 import css from './App.module.css';
 const Home = lazy(() => import('./Pages/Home/Home'));
