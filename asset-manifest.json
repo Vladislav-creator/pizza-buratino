@@ -1,9 +1,9 @@
 {
   "files": {
-    "main.css": "/pizza-buratino/static/css/main.faa885d9.css",
-    "main.js": "/pizza-buratino/static/js/main.e12363de.js",
-    "static/css/601.aefb73d6.chunk.css": "/pizza-buratino/static/css/601.aefb73d6.chunk.css",
-    "static/js/601.765d490e.chunk.js": "/pizza-buratino/static/js/601.765d490e.chunk.js",
+    "main.css": "/pizza-buratino/static/css/main.e0557c34.css",
+    "main.js": "/pizza-buratino/static/js/main.f8ab8eef.js",
+    "static/css/601.940c9f57.chunk.css": "/pizza-buratino/static/css/601.940c9f57.chunk.css",
+    "static/js/601.3e57e09c.chunk.js": "/pizza-buratino/static/js/601.3e57e09c.chunk.js",
     "static/css/415.3a721fda.chunk.css": "/pizza-buratino/static/css/415.3a721fda.chunk.css",
     "static/js/415.a06eda18.chunk.js": "/pizza-buratino/static/js/415.a06eda18.chunk.js",
     "static/js/498.3cea10e7.chunk.js": "/pizza-buratino/static/js/498.3cea10e7.chunk.js",
@@ -12,20 +12,20 @@
     "static/media/week_offer_delivery_page_1414_300_papa-dzhon.jpg": "/pizza-buratino/static/media/week_offer_delivery_page_1414_300_papa-dzhon.aa7a799f23450523512d.jpg",
     "static/media/web_-50_na_drugu_1314_300B.jpg": "/pizza-buratino/static/media/web_-50_na_drugu_1314_300B.d62ce78ee72dcdb6ae86.jpg",
     "static/media/pizzaBackgraund.jpg": "/pizza-buratino/static/media/pizzaBackgraund.f7002039a44dbebad18f.jpg",
-    "static/media/Buratino_Layer 2.png": "/pizza-buratino/static/media/Buratino_Layer 2.9acba26eda48af52b075.png",
+    "static/media/pizza-buratino.png": "/pizza-buratino/static/media/pizza-buratino.3ec7a11ffa75f4a3fa09.png",
     "static/media/deliveryC.jpg": "/pizza-buratino/static/media/deliveryC.ae4097aabbdbf9873c81.jpg",
     "index.html": "/pizza-buratino/index.html",
-    "main.faa885d9.css.map": "/pizza-buratino/static/css/main.faa885d9.css.map",
-    "main.e12363de.js.map": "/pizza-buratino/static/js/main.e12363de.js.map",
-    "601.aefb73d6.chunk.css.map": "/pizza-buratino/static/css/601.aefb73d6.chunk.css.map",
-    "601.765d490e.chunk.js.map": "/pizza-buratino/static/js/601.765d490e.chunk.js.map",
+    "main.e0557c34.css.map": "/pizza-buratino/static/css/main.e0557c34.css.map",
+    "main.f8ab8eef.js.map": "/pizza-buratino/static/js/main.f8ab8eef.js.map",
+    "601.940c9f57.chunk.css.map": "/pizza-buratino/static/css/601.940c9f57.chunk.css.map",
+    "601.3e57e09c.chunk.js.map": "/pizza-buratino/static/js/601.3e57e09c.chunk.js.map",
     "415.3a721fda.chunk.css.map": "/pizza-buratino/static/css/415.3a721fda.chunk.css.map",
     "415.a06eda18.chunk.js.map": "/pizza-buratino/static/js/415.a06eda18.chunk.js.map",
     "498.3cea10e7.chunk.js.map": "/pizza-buratino/static/js/498.3cea10e7.chunk.js.map",
     "369.313162fc.chunk.js.map": "/pizza-buratino/static/js/369.313162fc.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.faa885d9.css",
-    "static/js/main.e12363de.js"
+    "static/css/main.e0557c34.css",
+    "static/js/main.f8ab8eef.js"
   ]
 }
