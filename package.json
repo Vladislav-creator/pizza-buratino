@@ -1,7 +1,8 @@
-{"name": "test-typescript",
+{
+ "name": "pizza-buratino",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://Vladislav-creator.github.io/test-typescript/",
+  "homepage": "https://Vladislav-creator.github.io/pizza-buratino/",
   "dependencies": {
     "@reduxjs/toolkit": "^2.2.3",
     "@testing-library/jest-dom": "^5.17.0",
