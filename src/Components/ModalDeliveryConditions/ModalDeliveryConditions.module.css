@@ -1,0 +1,84 @@
+.modalBackdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items:  center;
+    z-index: 1;
+  }
+  
+  .modalContent {
+    background: white;
+    
+    border-radius: 8px;
+    width: 100%;
+    max-width: 500px;
+    position: relative;
+    z-index: 1;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.3);
+    animation: slideIn 1s ease-out;
+  }
+  .titleModalContent{
+    height: 75px;
+    padding: 0 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100%;
+    font-weight: 700;
+    color: #5f5f5f;
+    font-size: 18px;
+    letter-spacing: 0.18px;
+    box-shadow: 0px 7px 20px 0px rgba(0, 0, 0, 0.09);
+}
+.textModalContent {
+  padding: 40px;
+}
+  
+  .closeButton {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: transparent; /* Прозрачный фон */
+    border: 2px solid #ccc; /* Серый цвет ободка */
+    border-radius: 50%; /* Сделать кнопку круглой */
+    color: #ccc; /* Серый цвет текста и символа крестика */
+    cursor: pointer;
+    font-size: 15px; /* Размер символа крестика */
+    padding: 0; /* Убрать отступы вокруг текста */
+    width: 25px; /* Ширина кнопки */
+    height: 25px; /* Высота кнопки */
+    display: flex; /* Сделать содержимое центрированным */
+    justify-content: center; /* Горизонтальное центрирование содержимого */
+    align-items: center; /* Вертикальное центрирование содержимого */
+    transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease; /* Плавное изменение цвета при наведении */
+  }
+  
+  .closeButton::after {
+    content: '✖'; 
+  }
+  
+  .closeButton:hover,
+  .closeButton:focus {
+    background-color: #f0f0f0; /* Изменение цвета фона при наведении */
+    border-color: #999; /* Изменение цвета ободка при наведении */
+    color: #999; /* Изменение цвета текста и символа крестика при наведении */
+  }
+  @keyframes slideIn {
+    from {
+      transform: translateY(100%);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
