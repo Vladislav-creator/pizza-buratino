@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkpizza_buratino=self.webpackChunkpizza_buratino||[]).push([[498],{498:(a,i,n)=>{n.r(i),n.d(i,{default:()=>e});n(43);var s=n(579);const e=()=>(0,s.jsxs)("div",{children:[(0,s.jsx)("h1",{children:"Contact Page"}),(0,s.jsx)("p",{children:"Contact us for any inquiries!"})]})}}]);
+//# sourceMappingURL=498.3cea10e7.chunk.js.map
