@@ -4,7 +4,7 @@ const Contact: React.FC = () => {
     return (
         <div>
             <h1>Contact Page</h1>
-            <p>Contact us for any inquiries!</p>
+            <p>Contact us for any inquiries! And we will answer you</p>
            
         </div>
     );

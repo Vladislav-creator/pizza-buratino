@@ -110,4 +110,6 @@
  font-size: 40px;
  color: blueviolet;
  }
- 
+ #gtx-trans {
+  display: none;
+ }
