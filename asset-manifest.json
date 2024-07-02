@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/pizza-buratino/static/css/main.ecae9e54.css",
-    "main.js": "/pizza-buratino/static/js/main.73a0821f.js",
+    "main.js": "/pizza-buratino/static/js/main.ffdf75cc.js",
     "static/css/601.d0c9ba6f.chunk.css": "/pizza-buratino/static/css/601.d0c9ba6f.chunk.css",
     "static/js/601.2c0f896e.chunk.js": "/pizza-buratino/static/js/601.2c0f896e.chunk.js",
     "static/css/415.a5e2bd38.chunk.css": "/pizza-buratino/static/css/415.a5e2bd38.chunk.css",
@@ -16,7 +16,7 @@
     "static/media/deliveryC.jpg": "/pizza-buratino/static/media/deliveryC.ae4097aabbdbf9873c81.jpg",
     "index.html": "/pizza-buratino/index.html",
     "main.ecae9e54.css.map": "/pizza-buratino/static/css/main.ecae9e54.css.map",
-    "main.73a0821f.js.map": "/pizza-buratino/static/js/main.73a0821f.js.map",
+    "main.ffdf75cc.js.map": "/pizza-buratino/static/js/main.ffdf75cc.js.map",
     "601.d0c9ba6f.chunk.css.map": "/pizza-buratino/static/css/601.d0c9ba6f.chunk.css.map",
     "601.2c0f896e.chunk.js.map": "/pizza-buratino/static/js/601.2c0f896e.chunk.js.map",
     "415.a5e2bd38.chunk.css.map": "/pizza-buratino/static/css/415.a5e2bd38.chunk.css.map",
@@ -26,6 +26,6 @@
   },
   "entrypoints": [
     "static/css/main.ecae9e54.css",
-    "static/js/main.73a0821f.js"
+    "static/js/main.ffdf75cc.js"
   ]
 }
